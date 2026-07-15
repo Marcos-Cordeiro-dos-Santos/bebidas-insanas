@@ -18,6 +18,7 @@
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
+  animation: up 1s ease-in-out 1 alternate;
   
   width:100%;
   height:100%;
@@ -28,6 +29,7 @@
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
+  animation: down 1s ease-in-out 1 alternate;
   
   width:500px;
 }
@@ -41,6 +43,7 @@
   font-size: 14rem;
   font-weight: bold;
   text-align:center;
+  animation: left 1s ease-in-out 1 alternate;
 }
 
 #prev, #next {
@@ -62,4 +65,25 @@
 }
 #next {
   right: 10px;
+}
+@keyframes up {
+  from{
+    top:100%
+  }end{
+    top:50%;
+  }
+}
+@keyframes down {
+  from{
+    top:0%;
+  }end{
+    top:50%;
+  }
+}
+@keyframes left {
+  from{
+    left:100%;
+  }end{
+    left:50%;
+  }
 }
